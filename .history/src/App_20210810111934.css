@@ -1,0 +1,76 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  background-color: rgba(41, 39, 39, 0.952);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.NavBar {
+  font-size: 1.4rem;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  padding: 0.2rem 0.8rem;
+  align-items: center;
+  justify-content: space-between;
+  color: inherit;
+  background-color: inherit;
+  grid-template-columns: 1fr 2.5fr auto 1fr;
+}
+.NavBar * {
+  cursor: pointer;
+}
+.NavBar > :nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.NavBar > :nth-child(1) > * {
+  margin: 0.3rem;
+}
+.NavBar > :nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  flex: 2;
+}
+.NavBar > :nth-child(2) > * {
+  margin: 0.5rem;
+}
+.NavBar > :nth-child(2) > :nth-child(2) {
+  border: 0.2rem solid grey;
+  padding: 0.1rem;
+  width: 3rem;
+  height: 1.7rem;
+}
+
+.NavBar > :nth-child(3) {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex: 1;
+}
+.NavBar > :nth-child(3) > * {
+  margin: 0 1.2rem 0 0;
+}
+
+.NavBar input {
+  justify-self: center;
+  height: 1.7rem;
+  flex: 3;
+  margin: 0 0.5rem 0 1rem;
+  background-color: rgba(41, 39, 39, 0.952);
+  border-style: 0.4px solid;
+  border-color: rgb(98, 102, 96);
+  align-items: center;
+  color: rgb(175, 167, 167);
+}

@@ -1,0 +1,69 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: aliceblue;
+  background-color: rgba(41, 39, 39, 0.952);
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.NavBar {
+  font-size: 1.4rem;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  padding: 0.2rem 1rem;
+  align-items: center;
+  color: inherit;
+  background-color: inherit;
+}
+.NavBar > * {
+  cursor: pointer;
+}
+.NavBar > :nth-child(1) {
+  flex: 0.3;
+  justify-self: flex-start;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NavBar > :nth-child(1) > * {
+  margin: 0.3rem;
+}
+.NavBar > :nth-child(4) {
+  display: flex;
+
+  flex: 0.5rem;
+}
+.NavBar > :nth-child(4) > * {
+  margin: 0rem 0.7rem;
+}
+
+.NavBar > :nth-child(3) {
+  width: 2.5rem;
+  height: 1.7rem;
+  flex: 0.5rem;
+  padding: 0.2rem;
+  margin-left: -0.4rem;
+  border-style: 1px solid;
+  border-color: black;
+  background-color: rgb(104, 103, 103);
+}
+
+.NavBar > input {
+  flex: 1.5;
+  height: 1.7rem;
+  margin: 0 0.5rem 0 1rem;
+  background-color: rgba(41, 39, 39, 0.952);
+  border-style: 0.4px solid;
+  border-color: rgb(98, 102, 96);
+  display: flex;
+  align-items: center;
+  color: rgb(175, 167, 167);
+}

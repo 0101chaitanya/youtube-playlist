@@ -1,0 +1,33 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+}
+*,
+*before,
+*after {
+  box-sizing: border-box;
+}
+.NavBar {
+  font-size: larger;
+  display: flex;
+  width: 100vw;
+  border: 1px solid;
+  justify-content: space-between;
+  padding: 0.1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.NavBar > span {
+  padding: 0rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NavBar > :nth-child(1) {
+  background-color: aquamarine;
+}
+.NavBar > span > span {
+  display: flex;
+}

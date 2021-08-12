@@ -1,0 +1,51 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+}
+*,
+*before,
+*after {
+  box-sizing: border-box;
+}
+.NavBar {
+  display: flex;
+  width: 100vw;
+  border: 1px solid;
+  justify-content: space-around;
+  padding: 0.2rem;
+  align-items: center;
+}
+.NavBar > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.NavBar > span > *,
+.NavBar > svg {
+  margin: 0.3rem 0.5rem 0.3rem;
+}
+.NavBar > :nth-child(1) {
+  flex: 0.5;
+  background-color: aqua;
+  flex-basis: content;
+}
+.NavBar > :nth-child(2) {
+  flex: 0.7;
+  background-color: aqua;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+}
+.NavBar > :nth-child(2) > * {
+  flex: 0.7;
+  margin: 0;
+}
+.NavBar > :nth-child(3) {
+  flex: 2;
+  background-color: aqua;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+}

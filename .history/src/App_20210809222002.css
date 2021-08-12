@@ -1,0 +1,25 @@
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.NavBar {
+  font-size: larger;
+  display: flex;
+  width: 100vw;
+  border: 1px solid;
+  justify-content: space-between;
+  padding: 0.1rem 1rem;
+  align-items: center;
+}
+.NavBar > * {
+  margin: 0;
+  flex: 1;
+}
